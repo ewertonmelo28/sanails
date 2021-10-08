@@ -1,101 +1,137 @@
 @charset "UTF-8";
 
 body {
-    margin:0;
-    padding:0;
-    color:#000;
-    background: #c4beba;
+    margin: 0;
+    padding: 0;
+    color: #000;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .geral {
-    
-    width:100%;    
+    width: 100%;
 }
+
 div.cabecalho {
-    background:#dec9c1    ;
-    height: 50px;    
+    background: #DDBCB3;
+    height: 50px;
 }
-.menu{
-    float:left;
+
+.menu {
+    float: left;
     padding: 10px;
     font-style: italic;
 }
+
 a:link {
     color: inherit;
     text-decoration: none;
 }
- /* link que foi visitado */
+
+/* link que foi visitado */
 a:visited {
     color: inherit;
     text-decoration: none;
 }
-.redes-sociais{
+
+.redes-sociais {
     text-align: center;
     width: 100%;
     margin-top: 10px;
 }
-.principal{
+
+.principal {
     margin-top: 10px;
 }
+
 #conteudo-1 {
     width: 60%;
     margin: auto;
     float: left;
     padding: 50px;
 }
+
 div#divulgacao {
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Brush Script MT, Brush Script Std, cursive;
 
 }
-p#divulgacao{
+
+p#divulgacao {
     text-align: center;
     font-style: italic;
 }
+
 #conteudo-2 {
     width: 40%;
     margin: auto;
     float: right;
-    padding: 50px;   
+    padding: 50px;
 }
 
-div#localizacao{
+div#localizacao {
     margin-top: 40px;
     width: 100%;
 }
 
-div#localizacao-text{
+div#localizacao-text {
     float: left;
     text-align: right;
     width: 50%;
     height: 245px;
     padding: 20px;
 }
-p#localizacao-text{
-    
+
+p#localizacao-text {
     font-weight: 600;
 }
 
-div#mapa{
+div#mapa {
     float: right;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
+
 .rodape {
     width: 100%;
     height: 50px;
     float: left;
-    background:#dec9c1;
+    background: #DDBCB3;
 }
+
 /* Formatação de tabela do bootstrap */
-table.table-striped{
+table.table-striped {
     vertical-align: middle;
     margin: auto;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.agendamento{
-    width: 50%;
-    margin: auto;
+
+div.agendamento {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+h1.agendamento{
+    font-weight: 700;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+form.agendamento label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-weight: 600;
+}
+form.agendamento input{
+    width: 450px;
+    outline: none;
+}
+form.agendamento button[type="submit"]{
+    margin: 30px auto 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 35px;
+    padding: 10px;
+    background-color: #DDBCB3;
+    font-weight: 700;
 }

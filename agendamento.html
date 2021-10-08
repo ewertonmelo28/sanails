@@ -45,12 +45,12 @@
                             d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
                     </svg> Agendamento</a>
             </div>
-
+            <!--Setor de agendamento-->
         </div>
         <div class="principal">
             <div class="agendamento">
-                <h1>Realize seu agendamento!</h1><br>
-                <form action="/pagina-processa-dados-do-form" method="post">
+                <h1 class="agendamento">Realize seu agendamento!</h1>
+                <form class="agendamento" action="/pagina-processa-dados-do-form" method="post">
                     <div>
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="cliente_nome" />
@@ -69,8 +69,8 @@
                     </div>
 
 
-                    <div class="button">
-                        <button type="submit">Enviar sua mensagem</button>
+                    <div class="agendamento">
+                        <button type="submit">Finalizar agendamento</button>
                     </div>
                 </form>
             </div>

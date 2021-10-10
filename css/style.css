@@ -122,10 +122,11 @@ form.agendamento label{
     margin-top: 20px;
     font-weight: 600;
 }
-form.agendamento input{
+form.agendamento input, select{
     width: 450px;
     outline: none;
 }
+
 form.agendamento button[type="submit"]{
     margin: 30px auto 30px;
     cursor: pointer;

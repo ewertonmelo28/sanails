@@ -21,6 +21,13 @@ div.cabecalho {
     padding: 10px;
     font-style: italic;
 }
+.login button{
+    margin: 10px 10px 10px 10px;
+    float: right;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #DDBCB3;
+}
 
 a:link {
     color: inherit;

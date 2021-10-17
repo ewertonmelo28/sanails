@@ -109,6 +109,7 @@ div#mapa {
 /* Formatação de tabela do bootstrap */
 /* Estilo da pagina catálogo */
 table.table-striped {
+    width: 80%;
     vertical-align: middle;
     margin: auto;
     font-style: italic;
@@ -134,8 +135,7 @@ form.agendamento label {
     font-weight: 600;
 }
 
-form.agendamento input,
-select {
+form.agendamento input,select {
     width: 450px;
     outline: none;
 }
@@ -169,4 +169,34 @@ form.form_login button[type="submit"] {
     background-color: #DDBCB3;
     font-weight: 700;
     color: black;
+}
+div.painel {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+form.painel button[type="submit"] {
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 35px;
+    padding: 10px;
+    background-color: #DDBCB3;
+    font-weight: 700;
+    color: black;
+}
+form.painel label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+form.painel input,select {
+    width: 450px;
+    outline: none;
+}
+.agenda{
+    width: 80%;
+    margin: auto;
 }

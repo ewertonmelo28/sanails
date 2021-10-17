@@ -23,7 +23,7 @@
                 <select type="text" id="data_agenda" name="data_agenda">
                     <option value="">Escolha uma data</option>
                     <?php
-                    $result_cat = "SELECT * FROM data ORDER BY data";
+                    $result_cat = "SELECT *, DATE_FORMAT(data, '%d/%m/%Y') as data FROM data ORDER BY data";
                     $resultado_cat = mysqli_query($conexao_agend, $result_cat);
                     while ($row_cat = mysqli_fetch_assoc($resultado_cat)) {
                         echo '<option value="' . $row_cat['id_data'] . '">' . $row_cat['data'] . '</option>';

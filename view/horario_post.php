@@ -6,10 +6,10 @@
 	$resultado_hora = mysqli_query($conexao_agend, $result_hora);
 	
 	while ($row_hora = mysqli_fetch_assoc($resultado_hora) ) {
-		$resultao_hora[] = array(
+		$resulta_hora[] = array(
 			'id_hora'	=> $row_hora['id_hora'],
 			'hora' => $row_hora['hora'],
 		);
 	}
 	
-	echo(json_encode($resultao_hora));
+	echo(json_encode($resulta_hora));

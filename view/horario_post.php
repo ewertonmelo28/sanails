@@ -2,7 +2,7 @@
 
 	$data_agenda = $_REQUEST['data_agenda'];
 	
-	$result_hora = "SELECT * FROM hora WHERE id_data=$data_agenda ORDER BY hora";
+	$result_hora = "SELECT * FROM hora WHERE fk_data=$data_agenda AND livre=1 ORDER BY hora";
 	$resultado_hora = mysqli_query($conexao_agend, $result_hora);
 	
 	while ($row_hora = mysqli_fetch_assoc($resultado_hora) ) {

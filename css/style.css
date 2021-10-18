@@ -200,3 +200,6 @@ form.painel input,select {
     width: 80%;
     margin: auto;
 }
+.confir_agenda{
+    color: green;
+}

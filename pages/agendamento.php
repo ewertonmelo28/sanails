@@ -2,14 +2,31 @@
 <div class="principal">
     <div class="agendamento">
         <h1 class="agendamento">Realize seu agendamento!</h1>
-        <form class="agendamento" action="#" method="post">
+        <?php
+            if(isset($_SESSION['confirm'])){
+        ?>
+        <div class="notification is-success">
+        <?php echo $_SESSION['confirm']; 
+        unset($_SESSION['confirm']);?>
+        </div>
+        <?php
+            }elseif(isset($_SESSION['erro'])){ 
+            ?>
+        <div class="notification is-danger">
+            <?php echo $_SESSION['erro']; 
+            unset($_SESSION['erro']);?>
+        </div>
+        <?php 
+            }
+        ?>
+        <form class="agendamento" action="view/salva_agendamento.php" method="POST">
             <div>
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="cliente_nome" />
+                <input type="text" id="nome" name="cliente_nome" require/>
             </div>
             <div>
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="cliente_telefone" />
+                <input type="tel" id="telefone" name="cliente_telefone" require/>
             </div>
             <div>
                 <label for="servico">Serviço:</label>
@@ -23,7 +40,7 @@
                 <select type="text" id="data_agenda" name="data_agenda">
                     <option value="">Escolha uma data</option>
                     <?php
-                    $result_cat = "SELECT *, DATE_FORMAT(data, '%d/%m/%Y') as data FROM data ORDER BY data";
+                    $result_cat = "SELECT *, DATE_FORMAT(data, '%d/%m/%Y') as data FROM data WHERE livre=1 ORDER BY data";
                     $resultado_cat = mysqli_query($conexao_agend, $result_cat);
                     while ($row_cat = mysqli_fetch_assoc($resultado_cat)) {
                         echo '<option value="' . $row_cat['id_data'] . '">' . $row_cat['data'] . '</option>';

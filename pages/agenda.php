@@ -11,7 +11,7 @@ include('view/verifica_login.php');
     </thead>
     <?php
     $data_painel = $_REQUEST['data_painel'];
-    $result_agenda = "SELECT * FROM agenda WHERE fk_data=$data_painel";
+    $result_agenda = "SELECT * FROM agenda WHERE fk_data=$data_painel ORDER BY fk_hora";
     $resultado_agenda = mysqli_query($conexao_agend, $result_agenda);
 
 

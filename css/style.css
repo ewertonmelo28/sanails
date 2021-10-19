@@ -170,6 +170,7 @@ form.form_login button[type="submit"] {
     font-weight: 700;
     color: black;
 }
+/* Estilo do painel */
 div.painel {
     font-weight: 600;
     display: flex;
@@ -196,6 +197,7 @@ form.painel input,select {
     width: 450px;
     outline: none;
 }
+/* Estilo da pagina de agenda */
 .agenda{
     width: 80%;
     margin: auto;

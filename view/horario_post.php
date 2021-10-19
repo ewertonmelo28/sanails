@@ -1,6 +1,5 @@
-<!-- Visualizar horario com base na seleção da data na pagina de agendamento -->
 <?php include_once("conexao.php");
-
+/* Visualizar horario com base na seleção da data na pagina de agendamento */
 	$data_agenda = $_REQUEST['data_agenda'];
 	
 	$result_hora = "SELECT * FROM hora WHERE fk_data=$data_agenda AND livre=1 ORDER BY hora";

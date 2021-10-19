@@ -1,3 +1,5 @@
+<!-- Pagina inicial do site -->
+
 <div class="principal">
     <!--Dilvulgação-->
     <div id="conteudo-1">

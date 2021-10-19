@@ -1,3 +1,4 @@
+<!-- Visualizar horario com base na seleção da data na pagina de agendamento -->
 <?php include_once("conexao.php");
 
 	$data_agenda = $_REQUEST['data_agenda'];

@@ -3,6 +3,7 @@ include('view/verifica_login.php');
 ?>
 
 <div class="painel">
+    <!-- Seleção da data para visualizar a agenda -->
     <form class="painel" action="index.php?menuop=agenda" method="POST">
         <label for="data_painel">Selecione a data:</label>
         <select type="text" id="data_painel" name="data_painel">
@@ -20,16 +21,7 @@ include('view/verifica_login.php');
 </form>
 
 
-
-
-
-
-
-<!-- <h2>Olá, <?php echo $_SESSION['usuario']; ?></h2> -->
-
-
-
-
+<!-- Link da pagina para liberar datas na agenda -->
 <div class="painel">
     <form class="painel" action="page/criar_agend.php">
         <button type="submit">Liberar Agenda</button>

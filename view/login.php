@@ -1,3 +1,4 @@
+<!-- Validação do login -->
 <?php
 session_start();
 include('conexao.php');

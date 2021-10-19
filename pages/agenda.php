@@ -1,6 +1,7 @@
 <?php
 include('view/verifica_login.php');
 ?>
+<!-- Pagina de visualização da agenda -->
 <div class="agenda">
 <table class="table table-striped">
     <thead>

@@ -71,7 +71,9 @@ include('view/conexao.php');
     case 'agenda':
       include("pages/agenda.php");
       break;
-
+    case 'criar_agenda':
+      include("pages/criar_agenda.php");
+      break;
     default:
       include("pages/home.php");
       break;

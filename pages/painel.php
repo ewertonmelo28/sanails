@@ -23,7 +23,7 @@ include('view/verifica_login.php');
 
 <!-- Link da pagina para liberar datas na agenda -->
 <div class="painel">
-    <form class="painel" action="page/criar_agend.php">
+    <form class="painel" action="index.php?menuop=criar_agenda" method="POST">
         <button type="submit">Liberar Agenda</button>
     </form>
     <form class="painel" action="view/logout.php">

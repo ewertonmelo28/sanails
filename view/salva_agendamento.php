@@ -4,14 +4,17 @@ session_start();
 /* Inserção de dados na agenda  */
 
 
-if ($_POST['cliente_nome'] != null and $_POST['cliente_telefone'] != null) {
+if (
+    $_POST['cliente_nome'] != null and $_POST['cliente_telefone'] != null
+    and $_POST['data_agenda'] != null and $_POST['hora_agenda'] != null
+) {
     $cliente_nome = $_POST['cliente_nome'];
     $cliente_telefone = $_POST['cliente_telefone'];
     $servico = $_POST['servico'];
     $data_agenda = $_POST['data_agenda'];
     $hora_agenda = $_POST['hora_agenda'];
-}else{
-    $_SESSION['erro'] = "<p>Informe Nome e Telefone !</p>";
+} else {
+    $_SESSION['erro'] = "<p>Informe todos os dados !</p>";
     header("Location: ../index.php?menuop=agendamento");
 }
 
@@ -25,7 +28,7 @@ $row_consult_hora = mysqli_fetch_array($result_consult_hora);
 switch ($row_consult_hora["hora"]) {
     case '0':
         $alt_data = "UPDATE agendamento.data SET livre = 0 WHERE id_data = $data_agenda";
-    $result_alt_hora = mysqli_query($conexao_agend, $alt_data);
+        $result_alt_hora = mysqli_query($conexao_agend, $alt_data);
         break;
 }
 

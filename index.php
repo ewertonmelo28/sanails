@@ -1,8 +1,3 @@
-<?php
-session_start();
-include('view/conexao.php');
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 

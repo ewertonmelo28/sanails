@@ -1,4 +1,6 @@
 <?php
+include("view/conexao.php");
+session_start();
 include('view/verifica_login.php');
 ?>
 

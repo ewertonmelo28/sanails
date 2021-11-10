@@ -1,3 +1,7 @@
+<?php
+include("view/conexao.php");
+session_start();
+?>
 <!--Setor de agendamento-->
 <div class="principal">
     <div class="agendamento">

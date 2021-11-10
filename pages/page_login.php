@@ -1,3 +1,7 @@
+<?php
+include("view/conexao.php");
+session_start();
+?>
 <!-- Formulario de login e senha -->
 <div class="form_login">
     <h1 class="form_login">ÁREA DO ADMINISTRADOR</h1><br><br>

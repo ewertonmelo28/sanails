@@ -1,4 +1,6 @@
 <?php
+session_start();
+include('view/conexao.php');
 include('view/verifica_login.php');
 ?>
 <!-- Pagina de visualização da agenda -->

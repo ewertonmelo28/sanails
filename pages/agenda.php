@@ -10,8 +10,12 @@ include('view/verifica_login.php');
         <th>Telefone</th>
         <th>Serviço</th>
     </thead>
+    <!-- Exibe os agendamentos com base na data enviada pela pagina "Painel.php" -->
     <?php
     $data_painel = $_REQUEST['data_painel'];
+    if ($data_painel == null) {
+        header('Location: index.php?menuop=painel');
+    }
     $result_agenda = "SELECT * FROM agenda WHERE fk_data=$data_painel ORDER BY fk_hora";
     $resultado_agenda = mysqli_query($conexao_agend, $result_agenda);
 

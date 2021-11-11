@@ -108,12 +108,9 @@ div#mapa {
 
 /* Formatação de tabela do bootstrap */
 /* Estilo da pagina catálogo */
-table.table-striped {
+div.catalogo{
     width: 80%;
-    vertical-align: middle;
     margin: auto;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Estilo da pagina agendamento */

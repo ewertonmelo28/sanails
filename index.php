@@ -54,6 +54,21 @@
     case 'catalogo':
       include("pages/catalogo.php");
       break;
+    case 'catalogo_painel':
+      include("pages/catalogo_painel.php");
+      break;
+    case 'catalogo_painel':
+      include("pages/catalogo_painel.php");
+      break;
+    case 'editar_catalogo':
+      include("pages/editar_catalogo.php");
+      break;
+      case 'exclui_catalogo':
+        include("view/exclui_catalogo.php");
+        break;
+      case 'adicionar_catalogo':
+        include("pages/adicionar_catalogo.php");
+        break;
     case 'agendamento':
       include("pages/agendamento.php");
       break;

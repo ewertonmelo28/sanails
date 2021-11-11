@@ -3,7 +3,6 @@ include("view/conexao.php");
 session_start();
 ?>
 <!--Setor de agendamento-->
-<div class="principal">
     <div class="agendamento">
         <h1 class="agendamento">Realize seu agendamento!</h1>
         <?php

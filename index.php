@@ -57,9 +57,6 @@
     case 'catalogo_painel':
       include("pages/catalogo_painel.php");
       break;
-    case 'catalogo_painel':
-      include("pages/catalogo_painel.php");
-      break;
     case 'editar_catalogo':
       include("pages/editar_catalogo.php");
       break;
@@ -84,6 +81,9 @@
     case 'criar_agenda':
       include("pages/criar_agenda.php");
       break;
+      case 'salva_agenda':
+        include("view/salva_agenda.php");
+        break;
     default:
       include("pages/home.php");
       break;

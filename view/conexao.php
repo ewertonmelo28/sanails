@@ -1,8 +1,8 @@
 <?php
 /* Conexção com banco de dados */
 define('HOST', '127.0.0.1');
-define('USUARIO', 'teste');
-define('SENHA', 'teste123');
+define('USUARIO', 'root');
+define('SENHA', 'root');
 define('DB_LOGIN', 'login');
 define('DB_AGEND', 'agendamento');
 define('DB_CATAL', 'catalogo');
